@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarChooserActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/titleLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/carChooser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/carChooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:transcriptMode="alwaysScroll"
+        android:columnCount="3"
+        android:rowCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/Return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_red"
+                android:id="@+id/carRed"
+                android:tag="red"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_red"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carRed"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_blue"
+                android:id="@+id/carBlue"
+                android:tag="blue"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_blue"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carBlue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_brown"
+                android:id="@+id/carBrown"
+                android:tag="brown"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_brown"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carBrown"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_pink"
+                android:id="@+id/carPink"
+                android:tag="pink"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_pink"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carPink"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_reverse"
+                android:id="@+id/carReverse"
+                android:tag="reverse"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_reverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_reverse"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carReverse"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="220dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/car_swag"
+                android:id="@+id/carSwag"
+                android:tag="swag"
+                android:contentDescription="Car"
+                android:onClick="selectCar"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textScore_swag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreToUnlock_swag"
+                android:textColor="#FFFFFF"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/carSwag"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+    <Button
+        android:id="@id/Return"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="previous"
+        android:text="@string/previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/userMaxScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

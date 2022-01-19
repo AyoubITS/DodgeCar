@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Dodge Cars</string>
+    <!--MAIN ACTIVITY-->
+    <string name="titleLabel">Dodge Cars</string>
+    <string name="creditsLabel">Published by HFA</string>
+    <string name="playButtonLabel">Play</string>
+    <string name="carButtonLabel">Choose car</string>
+    <string name="scoresButtonLabel">High Scores</string>
+    <string name="exitButtonLabel">Exit</string>
+    <string name="confirmExitTitle">Quit app ?</string>
+    <string name="confirmExitMessage">Do you really want to exit the game ?</string>
+    <string name="confirmExitYes">Yes</string>
+    <string name="confirmExitNo">No</string>
+    <!--GAME ACTIVITY-->
+    <string name="pauseButtonLabel">Pause</string>
+    <string name="ButtonPauseLabel">Pause</string>
+    <string name="players_sprite_description">Players\'s car</string>
+    <string name="pause_title">Pause</string>
+    <string name="button_resume_label">Resume</string>
+    <string name="button_quit_game_label">Quit game</string>
+    <!--CAR CHOOSER ACTIVITY-->
+    <string name="previous">Return</string>
+    <string name="prefs_car_key">carValuesKey</string>
+    <string name="carTag">car_default</string>
+</resources>

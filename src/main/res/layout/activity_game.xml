@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:id="@+id/frameLayout">
+
+    <!--Enemies-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/car_reverse"
+        android:tag="enemy"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/car_reverse"
+        android:tag="enemy"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/car_reverse"
+        android:tag="enemy"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/car_reverse"
+        android:tag="enemy"
+        android:scaleType="fitXY"/>
+
+
+
+    <ImageView
+        android:id="@+id/playerCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/players_sprite_description"
+        android:translationZ="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/ui_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationZ="2dp">
+
+        <Button
+            android:id="@+id/buttonPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="pauseGame"
+            android:text="@string/ButtonPauseLabel" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="12454"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pause_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:translationZ="3dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/pause_title"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonResumeGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="resumeGame"
+            android:text="@string/button_resume_label" />
+
+        <Button
+            android:id="@+id/buttonQuitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="quitGame"
+            android:text="@string/button_quit_game_label" />
+    </LinearLayout>
+
+</RelativeLayout>
